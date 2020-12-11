@@ -2,7 +2,7 @@
 public class binarySearch {
 
 	public static void main(String[] args) {
-		BinarySearch sol = new BinarySearch();
+		Solution sol = new Solution();
 
 		int[] arr = { 1, 2, 3, 5, 6, 7, 8 };
 		int target1 = 3;
@@ -18,10 +18,10 @@ public class binarySearch {
 	}
 }
 
-class BinarySearch {
+class Solution {
 	public static int binarySearchRecursive(int target, int[] array, int start, int end) {
 		int middle = (start + end) / 2;
-		
+
 		if (end < start)
 			return -1;
 		if (target < array[middle])
